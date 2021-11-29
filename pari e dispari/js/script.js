@@ -10,10 +10,16 @@
 let userChoice = prompt('pari o dispari?').toLowerCase();
 
 let userNumber = parseInt(prompt('scegli un numero'));
+
+    while (isNaN(userNumber) == true) {
+        userNumber = parseInt(prompt('scegli un numero'));
+    }
+
 let pcNumber = Math.floor(Math.random() * 5) + 1;
 let sum = parseInt(userNumber + pcNumber);
 
 console.log('scelta utente', userChoice);
+console.log(userNumber);
 console.log('pc number', pcNumber);
 console.log('somma', sum);
 
