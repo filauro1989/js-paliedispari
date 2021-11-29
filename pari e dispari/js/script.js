@@ -9,9 +9,13 @@
 
 let userChoice = prompt('pari o dispari?').toLowerCase();
 
+    while (userChoice != 'pari' && userChoice != 'dispari') {
+        userChoice = prompt('pari o dispari?').toLowerCase();
+    }
+
 let userNumber = parseInt(prompt('scegli un numero'));
 
-    while (isNaN(userNumber) == true) {
+    while (isNaN(userNumber) == true || userNumber >= 6) {
         userNumber = parseInt(prompt('scegli un numero'));
     }
 
@@ -32,11 +36,11 @@ if(sum % 2 == 0) {
 } else {
     console.log('la somma è un numero Dispari');
     risultato = 'dispari';
-};
+}
 
 if (risultato == userChoice) {
     console.log("l'utente ha vinto!");
 } else {
     console.log("Il pc ha vinto!");
-};
+}
 
