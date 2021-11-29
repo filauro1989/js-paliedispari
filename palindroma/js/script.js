@@ -18,8 +18,7 @@ if (userWord == palindrome) {
 }
 
 function palindromo(parola) {
-    let palindrome = parola.split('').reverse().join('');
-    return palindrome;
+    return parola.split('').reverse().join('');
 }
 
 console.log(userWord);
