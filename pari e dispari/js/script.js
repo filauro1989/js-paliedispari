@@ -28,7 +28,7 @@ let userChoice = prompt('pari o dispari?').toLowerCase();
 
 let userNumber = parseInt(prompt('scegli un numero compreso tra 1 e 5'));
 
-    while (isNaN(userNumber) == true || userNumber >= 6) {
+    while (isNaN(userNumber) == true || userNumber >= 6 || userNumber <= 0) {
         alert('scelta non accettata, riprova!');
         userNumber = parseInt(prompt('scegli un numero'));
     }
