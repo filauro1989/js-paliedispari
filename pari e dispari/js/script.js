@@ -1,24 +1,8 @@
-// Palidroma
-// Chiedere all’utente di inserire una parola
-// Creare una funzione per capire se la parola inserita è palindroma
-// (prima senza funzione e poi con funzione)
-
-let userWord = prompt('Inserisci una parola');
-// let splitUserWord = userWord.split('');
-// splitUserWord = splitUserWord.reverse();
-// let palindrome = splitUserWord.join('');
-
-let palindrome = palindromo(userWord);
-
-if (userWord == palindrome) {
-    alert('bravo!')
-} else {
-    alert('sbagliato!')
-}
-
-function palindromo(parola) {
-    let palindrome = userWord.split('').reverse().join('');
-    return palindrome;
-}
-console.log(userWord);
-console.log(palindrome);
+// Pari e Dispari
+// L’utente sceglie pari o dispari e inserisce un numero da 1 a 5.
+// Generiamo un numero random (sempre da 1 a 5) per il computer
+// Sommiamo i due numeri
+// Stabiliamo se la somma dei due numeri è pari o dispari
+// Dichiariamo chi ha vinto
+// (corrispondenza tra scelta pari e dispari e somma pari o dispari)
+// In un secondo momento creiamo delle funzioni per i numeri random e per il check pari dispari
