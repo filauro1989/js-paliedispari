@@ -8,7 +8,7 @@
 // In un secondo momento creiamo delle funzioni per i numeri random e per il check pari dispari
 
 function getRandomNumber(min, max) {
-    return Math.floor(Math.random() * (max - min) + min);
+    return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
 function evenOrOdd(num) {
