@@ -6,3 +6,30 @@
 // Dichiariamo chi ha vinto
 // (corrispondenza tra scelta pari e dispari e somma pari o dispari)
 // In un secondo momento creiamo delle funzioni per i numeri random e per il check pari dispari
+
+let userChoice = prompt('pari o dispari?');
+let userNumber = parseInt(prompt('scegli un numero'));
+let pcNumber = Math.floor(Math.random() * 5) + 1;
+let sum = parseInt(userNumber + pcNumber);
+
+console.log('scelta utente', userChoice);
+console.log('pc number', pcNumber);
+console.log('somma', sum);
+
+
+let risultato = '';
+
+if(sum % 2 == 0) {
+    console.log('La somma è un numero Pari');
+    risultato = 'pari';
+} else {
+    console.log('la somma è un numero Dispari');
+    risultato = 'dispari';
+};
+
+if (risultato == userChoice) {
+    console.log("l'utente ha vinto!");
+} else {
+    console.log("Il pc ha vinto!");
+};
+
