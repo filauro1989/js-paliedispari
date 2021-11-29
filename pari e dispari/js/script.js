@@ -7,7 +7,8 @@
 // (corrispondenza tra scelta pari e dispari e somma pari o dispari)
 // In un secondo momento creiamo delle funzioni per i numeri random e per il check pari dispari
 
-let userChoice = prompt('pari o dispari?');
+let userChoice = prompt('pari o dispari?').toLowerCase();
+
 let userNumber = parseInt(prompt('scegli un numero'));
 let pcNumber = Math.floor(Math.random() * 5) + 1;
 let sum = parseInt(userNumber + pcNumber);

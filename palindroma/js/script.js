@@ -3,10 +3,11 @@
 // Creare una funzione per capire se la parola inserita è palindroma
 // (prima senza funzione e poi con funzione)
 
-let userWord = prompt('Inserisci una parola');
+let userWord = prompt('Inserisci una parola').toLowerCase();
 // let splitUserWord = userWord.split('');
 // splitUserWord = splitUserWord.reverse();
 // let palindrome = splitUserWord.join('');
+
 
 let palindrome = palindromo(userWord);
 
@@ -20,5 +21,6 @@ function palindromo(parola) {
     let palindrome = userWord.split('').reverse().join('');
     return palindrome;
 }
+
 console.log(userWord);
 console.log(palindrome);
